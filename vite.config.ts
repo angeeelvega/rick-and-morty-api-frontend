@@ -6,7 +6,10 @@ export default defineConfig({
   plugins: [react()],
   base: '/rick-and-morty-api-frontend/',
   resolve: {
-    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json']
+    extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
+    alias: {
+      src: '/src'
+    }
   },
   build: {
     sourcemap: true
